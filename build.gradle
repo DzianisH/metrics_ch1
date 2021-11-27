@@ -13,9 +13,10 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.0'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:2.6.0'
+    runtimeOnly 'io.micrometer:micrometer-registry-prometheus:1.8.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.0'
 }
 
 test {
